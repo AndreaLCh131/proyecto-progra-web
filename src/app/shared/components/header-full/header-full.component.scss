@@ -1,0 +1,81 @@
+$topnav-background-color: #eda923;
+
+.topnav {
+    border-radius: 0;
+    background-color: $topnav-background-color;
+    padding : 6px;
+    z-index:2;
+    .text-center{
+        text-align: center;
+        padding-left : 0;
+        cursor: pointer;
+    }
+    .top-right-nav{
+        .buy-now{
+            a{
+                color:#999;
+            }
+        }
+        .dropdown-menu{
+            top: 40px;
+            right: -5px;
+            left : auto;
+            .message-preview{
+                .media{
+                    .media-body{
+                        .media-heading{
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin-bottom : 0;
+                        }
+                        p{
+                            margin : 0;
+                        }
+                        p.last{
+                            font-size : 13px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            hr {
+                margin-top: 1px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+.header{
+    z-index: 1;
+    .navbar {        
+        background: $topnav-background-color !important;    
+        box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2);
+        height: 5.6em;
+        .header-titulo{
+            display: flex;    
+        }
+        .soporte-whatsapp{
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            span{
+                margin-right: 1rem;
+                font-weight: bold;
+                font-size: 1.17rem;
+            }
+        }
+        .navbar-nav-boton{
+            display: flex;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+        }
+        .color-titulo{
+            color: red;
+            font-weight: bold;
+        }
+    }
+}
+
+
+  

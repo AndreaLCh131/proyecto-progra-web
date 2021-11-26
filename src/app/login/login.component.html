@@ -1,0 +1,47 @@
+<div class="main container-fluid vertical-center">
+    <div class="form-content">
+        <div class="row">
+            <div class="container">
+                <h1>Inicio de Sesión en tu cuenta</h1>
+            </div>
+            <div class="col detalle">
+                <form role="form" (ngSubmit)="loggearCliente()" >
+  
+                    <div class="form-group campos">
+                        <label class="label-espacio">Usuario/Correo:</label>
+                        <span class="addon"><i class="fa fa-user"></i></span>
+                        <input type="text" name="username"  class="form-control" placeholder="Nombre de usuario">
+                    </div>
+  
+                    <div class="form-group campos">
+                        <label class="label-espacio">Contraseña:</label>
+                        <span class="addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" name="password" class="form-control" placeholder="Contraseña">
+                    </div>
+
+                    <div class="form-group campos alinear-labels form-switch">   
+                        <div>            
+                            <input class="form-check-input switch-label" type="checkbox" role="switch" checked>
+                            <span class="label-espacio">Recordar</span>
+                        </div>   
+                        <div>
+                            <span class="label-espacio">¿Olvidaste tu contraseña?</span>
+                        </div>
+                    </div>
+  
+                    <div class="alinear-boton">
+                        <button id="btn-iniciar-sesion" class="btn login-btn">Iniciar Sesión</button>
+                    </div>
+                </form>
+                <div class="form-group campos alinear-labels-final">   
+                    <div>
+                        <span class="label-espacio">¿No tienes cuenta?</span>
+                    </div>   
+                    <div>
+                        <a class="label-espacio link">Abrir cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>

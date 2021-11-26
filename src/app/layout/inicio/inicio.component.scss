@@ -1,0 +1,15 @@
+.main {
+    background-image:url('../../../assets/images/banner-principal.jpg');    
+    background-color: white;
+    background-position: right;
+    background-repeat: no-repeat;    
+    height: 100%;
+    .bienvenida{
+        h1{
+            color: #DA0209;
+            font-family: "HelveticaNeueLT Std Med Cn";
+        }        
+        padding-left: 4em;
+        padding-top: 2em;
+    }
+}

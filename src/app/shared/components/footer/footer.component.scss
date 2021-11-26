@@ -1,0 +1,29 @@
+$footer-color: #FFFFFF;
+.footer{
+    background-color: #a09e98;
+    height: 5.2em;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    small {
+        color:$footer-color;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 1em;
+        margin: auto;
+        a {
+            color:$footer-color;
+            text-decoration: none;
+            margin: 0.5em;
+        }
+        .footer-titulo{
+            position: absolute;
+            left: 20px;
+            top: 6px;
+        }
+        .apuesta-gana{
+            padding-left: 6em;
+            padding-top: 0em;
+            padding-bottom: 3em;
+            font-size: 1em;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<p-sidebar [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000">
+    <h3>Right Sidebar</h3>
+    <ul class="submenu">
+        <ng-template ngFor let-modulo [ngForOf]="modulos">
+            <li>
+                <a routerLink="{{modulo.ruta}}" (click)="visibleSidebar2 = false" > 
+                    <div class="texto">                                               
+                        <i class="{{modulo.icono}}"></i> 
+                        <h3>{{modulo.etiqueta}}</h3>                                                                            
+                    </div>
+                </a>
+            </li>
+        </ng-template>   
+    </ul>
+</p-sidebar>
+
+<div class="alinearBoton">
+    <p-button type="button" class="" (click)="visibleSidebar2 = true" icon="pi pi-arrow-left"></p-button>
+</div>

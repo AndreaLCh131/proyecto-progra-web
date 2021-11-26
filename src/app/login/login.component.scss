@@ -1,0 +1,65 @@
+$topnav-background-color: #eda923;
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1.5em;
+    background: $topnav-background-color;
+}
+
+.detalle{
+    padding: 2.2em;
+}
+
+.campos{
+    padding: 2em;
+}
+
+.label-espacio{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.alinear-labels{
+    display: flex;
+    justify-content: space-around;
+}
+.alinear-boton{
+    display: flex;
+    justify-content: center;
+}
+.login-btn{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10em;
+    padding-right: 10em;
+    border: 1px solid;
+    background:  $topnav-background-color;
+    font-weight: bold;
+}
+.switch-label{
+    margin-right: 2em;
+}
+
+
+:host ::ng-deep{
+    .form-check-input:checked {
+        background-color: #0dfd4c!important;
+        border-color: #0dfd4c!important;
+    }
+    .form-check-input {
+        height: 1.3em!important;
+    }
+    .form-switch .form-check-input {
+        width: 2.5em!important;
+    }
+}
+
+.alinear-labels-final{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link{
+    color: blue;
+}

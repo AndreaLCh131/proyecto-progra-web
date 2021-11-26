@@ -1,0 +1,31 @@
+.bienvenida{
+    margin-top: 5.6em;
+    .contenido-bienvenida{
+        background-color: #eed57b;
+        text-align: center;
+        padding: 1rem;
+        .negrita{
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+:host ::ng-deep{
+    .p-carousel-items-content{
+        height: 28.5em!important;
+    }
+    .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+        background-color: #fc832d !important;
+    }
+    .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+        border-radius: 6em;
+    }
+    .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+        border-radius: 6em;
+    }
+}
+
+.img-carouesel{
+    object-fit: contain;
+}
