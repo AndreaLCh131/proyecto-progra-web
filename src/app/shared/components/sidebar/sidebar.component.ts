@@ -15,8 +15,8 @@ export class SidebarComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.modulos = [{"ruta":"/layout/banner", "icono":"--", "etiqueta": "Banners"},
-    {"ruta":"/layout/categoria", "icono":"--", "etiqueta": "Categorias"}, {"ruta":"/layout/juego", "icono":"--", "etiqueta": "Juegos"}];
+    this.modulos = [{"ruta":"/layout/admin/banner", "icono":"--", "etiqueta": "Banners"},
+    {"ruta":"/layout/admin/categoria", "icono":"--", "etiqueta": "Categorias"}, {"ruta":"/layout/admin/juego", "icono":"--", "etiqueta": "Juegos"}];
   }
 
 }

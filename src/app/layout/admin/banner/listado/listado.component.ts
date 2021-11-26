@@ -23,10 +23,12 @@ export class ListadoComponent implements OnInit {
       { field: 'estado', header: 'Estado'},
       { field: 'acciones', header: 'Acción'},
     ];
-    this.listado = [{"bannerId": 123, "nombre":"Fultbol Campeonato", "imagen": "", "url": "icioco/apuestas", "estado": "activo"},
-    {"bannerId": 456, "nombre":"Fultbol Campeonato", "imagen": "", "url": "icioco/apuestas", "estado": "activo"},
-    {"bannerId": 678, "nombre":"Fultbol Campeonato", "imagen": "", "url": "icioco/apuestas", "estado": "activo"},
-    {"bannerId": 890, "nombre":"Fultbol Campeonato", "imagen": "", "url": "icioco/apuestas", "estado": "activo"}];
+    this.listado = [{"bannerId": 123, "nombre":"Fultbol Campeonato", "imagen": "banner-principal.jpg", "url": "icioco/apuestas", "estado": "activo"},
+    {"bannerId": 456, "nombre":"Cultbol Campeonato", "imagen": "mi4.jpg", "url": "icioco/poker", "estado": "activo"},
+    {"bannerId": 678, "nombre":"Aultbol Campeonato", "imagen": "mi6.png", "url": "icioco/apuestas", "estado": "activo"},
+    {"bannerId": 890, "nombre":"Fultbol Campeonato", "imagen": "mi7.jpg", "url": "icioco/apuestas", "estado": "iactivo"},
+    {"bannerId": 892, "nombre":"Fultbol Campeonato", "imagen": "mi7.jpg", "url": "icioco/apuestas", "estado": "iactivo"},
+    {"bannerId": 893, "nombre":"Fultbol Campeonato", "imagen": "mi7.jpg", "url": "icioco/apuestas", "estado": "iactivo"}];
   }
 
   onClickNuevo() {

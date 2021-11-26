@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PartidaRoutingModule } from './partida-routing.module';
+import { ClientesRoutingModule } from './clientes-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    PartidaRoutingModule
+    ClientesRoutingModule
   ]
 })
-export class PartidaModule { }
+export class ClientesModule { }

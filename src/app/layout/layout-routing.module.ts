@@ -9,9 +9,8 @@ const routes: Routes = [
     path: '', component: LayoutComponent,
     children: [
       { path: 'bienvenida', loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule) },
-      { path: 'banner', loadChildren: () => import('./banner/banner.module').then(m => m.BannerModule) },
-      { path: 'categoria', loadChildren: () => import('./categoria/categoria.module').then(m => m.CategoriaModule) },
-      { path: 'juego', loadChildren: () => import('./juego/juego.module').then(m => m.JuegoModule) }
+      { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+      { path: 'cliente', loadChildren: () => import('./cliente/cliente.module').then(m => m.ClienteModule) }
     ]
   }
 ];
