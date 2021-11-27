@@ -7,16 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  visibleSidebar2:boolean;
-  modulos:any[];
+  visibleSidebar2: boolean;
+  modulos: any[];
   constructor() {
     this.modulos = [];
     this.visibleSidebar2 = false;
-   }
+  }
 
   ngOnInit(): void {
-    this.modulos = [{"ruta":"/layout/admin/banner", "icono":"--", "etiqueta": "Banners"},
-    {"ruta":"/layout/admin/categoria", "icono":"--", "etiqueta": "Categorias"}, {"ruta":"/layout/admin/juego", "icono":"--", "etiqueta": "Juegos"}];
+    this.modulos = [
+      {
+        "ruta": "/layout/admin/banner",
+        "icono": "--", 
+        "etiqueta": "Banners"
+      },
+      {
+        "ruta": "/layout/admin/categoria",
+        "icono": "--", 
+        "etiqueta": "Categorias"
+      },
+      {
+        "ruta": "/layout/cliente",
+        "icono": "--", 
+        "etiqueta": "Juegos"
+      }
+    ];
   }
 
 }

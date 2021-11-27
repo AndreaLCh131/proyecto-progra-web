@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ClienteWrapperComponent } from './cliente-wrapper/cliente-wrapper.component';
 
 const routes: Routes = [
-  { path: 'historial-apuestas', loadChildren: () => import('./historial-apuestas/historial-apuestas.module').then(m => m.HistorialApuestasModule) },
-  { path: 'hoja-apuestas', loadChildren: () => import('./hoja-apuestas/hoja-apuestas.module').then(m => m.HojaApuestasModule) },
-  { path: 'partida-cliente', loadChildren: () => import('./partida-cliente/partida-cliente.module').then(m => m.PartidaClienteModule) }
+  {
+    path: '', component: ClienteWrapperComponent,
+    children: [
+      { path: 'historial-apuestas', loadChildren: () => import('./historial-apuestas/historial-apuestas.module').then(m => m.HistorialApuestasModule) },
+    ]
+  }
 ];
 
 @NgModule({

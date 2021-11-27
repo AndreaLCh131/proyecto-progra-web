@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Gill Sans MT";
+    color: #212121;
+    font-size: 12px;
+    height: 100%;
+    line-height: 1.4;
+    //overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus{
+    outline: none;
+}
