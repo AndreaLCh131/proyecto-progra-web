@@ -1,0 +1,54 @@
+:host {
+    font-size: 14px;
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.col-2 {
+    display: inline-block;
+    width: 50%;
+}
+
+.hojas-apuestas {
+    margin-top: 2em;
+    max-height: 45rem;
+    overflow: auto;
+
+    .hoja-apuesta {
+        border: 1px solid black;
+
+        .hoja-apuestas-header {
+            border-bottom: 1px solid black;
+            padding-left: 0.8em;
+        }
+
+        .hoja-apuestas-body {
+            padding: 0.8em;
+            padding-bottom: 0;
+
+            div {
+                margin-bottom: 0.8em;
+            }
+        }
+    }
+
+}
+
+
+.hoja-apuestas-wrapper-total{
+    border: 1px solid black;
+    margin-top: 2em;
+    padding: .8em;
+}
+
+
+@media (min-width: 1535px) {
+    :host {
+        width: 100%;
+    }
+    
+    .hojas-apuestas {
+        margin-top: 0;
+    }
+}
