@@ -5,17 +5,21 @@ import { ClienteRoutingModule } from './cliente-routing.module';
 import { ClienteWrapperComponent } from './cliente-wrapper/cliente-wrapper.component';
 import { PartidaClienteComponent } from './partida-cliente/partida-cliente.component';
 import { HojaApuestasComponent } from './hoja-apuestas/hoja-apuestas.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HojaApuestaComponent } from './hoja-apuesta/hoja-apuesta.component';
 
 
 @NgModule({
   declarations: [
     PartidaClienteComponent,
     ClienteWrapperComponent,
-    HojaApuestasComponent
+    HojaApuestasComponent,
+    HojaApuestaComponent
   ],
   imports: [
     CommonModule,
-    ClienteRoutingModule
+    ClienteRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ClienteModule { }

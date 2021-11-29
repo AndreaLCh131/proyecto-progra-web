@@ -5,15 +5,13 @@
                 <h4>LISTADO DE PARTIDAS</h4>
             </div>
             <div class="listado-partidas-body">
-                <app-partida-cliente></app-partida-cliente>
-                
-                <app-partida-cliente></app-partida-cliente>
-                
-                <app-partida-cliente></app-partida-cliente>
+                <ng-container *ngFor="let partidaCliente of partidasClientes">
+                    <app-partida-cliente [partidaCliente]="partidaCliente" (_onClickPartida)="handleOnClickPartida($event)"></app-partida-cliente>
+                </ng-container>
             </div>
         </div>
     </div>
     <div class="historial-apuestas-wrapper">
-        <app-hoja-apuestas></app-hoja-apuestas>
+        <app-hoja-apuestas [apuestas]="apuestas" (_oncClickCerrarApuesta)="handleOnClickCerrarApuesta($event)" (_oncClickEliminarTodasApuestas)="handleOnClickEliminarTodasApuestas()"></app-hoja-apuestas>
     </div>
 </div>

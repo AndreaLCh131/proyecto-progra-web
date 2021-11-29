@@ -1,102 +1,26 @@
-<div class="hojas-apuestas">
-    <div class="hoja-apuesta">
-        <div class="hoja-apuestas-header">
-            <h4>Peru - Brasil</h4>
-        </div>
-        <div class="hoja-apuestas-body">
-            <div class="resultado-partido">
-                Resultado del partido - 90 min: 2-1
-            </div>
-            <div class="col-2 equipo-ganador">
-                Peru
-            </div>
-            <div class="col-2 factor">
-                Factor: 2.45
-            </div>
-            <div class="col-2 monto">
-                Monto
-            </div>
-            <div class="col-2 ganacia-posible">
-                Ganancia Posible
-            </div>
-            <div class="col-2 monto-valor">
-                S/.100
-            </div>
-            <div class="col-2 ganacia-valor">
-                S/.100
-            </div>
-        </div>
+<ng-container>
+    <div class="hojas-apuestas">
+        <ng-container *ngFor="let apuesta of apuestas">
+            <app-hoja-apuesta [apuesta]="apuesta" (_oncClickCerrarApuesta)="handleOnClickCerrarApuesta($event)" (_onValueChangesApuesta)="handleOnValueChangesApuesta()"></app-hoja-apuesta>
+        </ng-container>
     </div>
-    <div class="hoja-apuesta">
-        <div class="hoja-apuestas-header">
-            <h4>Peru - Brasil</h4>
-        </div>
-        <div class="hoja-apuestas-body">
-            <div class="resultado-partido">
-                Resultado del partido - 90 min: 2-1
-            </div>
-            <div class="col-2 equipo-ganador">
-                Peru
-            </div>
-            <div class="col-2 factor">
-                Factor: 2.45
-            </div>
-            <div class="col-2 monto">
-                Monto
-            </div>
-            <div class="col-2 ganacia-posible">
-                Ganancia Posible
-            </div>
-            <div class="col-2 monto-valor">
-                S/.100
-            </div>
-            <div class="col-2 ganacia-valor">
-                S/.100
-            </div>
-        </div>
-    </div>
-    <div class="hoja-apuesta">
-        <div class="hoja-apuestas-header">
-            <h4>Peru - Brasil</h4>
-        </div>
-        <div class="hoja-apuestas-body">
-            <div class="resultado-partido">
-                Resultado del partido - 90 min: 2-1
-            </div>
-            <div class="col-2 equipo-ganador">
-                Peru
-            </div>
-            <div class="col-2 factor">
-                Factor: 2.45
-            </div>
-            <div class="col-2 monto">
-                Monto
-            </div>
-            <div class="col-2 ganacia-posible">
-                Ganancia Posible
-            </div>
-            <div class="col-2 monto-valor">
-                S/.100
-            </div>
-            <div class="col-2 ganacia-valor">
-                S/.100
-            </div>
-        </div>
-    </div>
-</div>
+</ng-container>
 
-
-<div class="hoja-apuestas-wrapper-total">
+<div class="hoja-apuestas-wrapper-total" [formGroup]="valoresTotalesForm">
     <div class="col-2">
-        Resultado del partido - 90 min: 2-1
-    </div>
-    <div class="col-2r">
-        Peru
+        Monto Total
     </div>
     <div class="col-2">
-        Resultado del partido - 90 min: 2-1
+        Ganancia Posible
     </div>
     <div class="col-2">
-        Peru
+        <input type="number" formControlName="montoTotal">
+    </div>
+    <div class="col-2">
+        <input type="number" formControlName="gananciaTotal">
+    </div>
+    <button class="primary-button" type="button">Aceptar</button>
+    <div class="eliminar-apuestas">
+        <small (click)="onClickEliminarTodasApuestas()">Eliminar todas las apuestas</small>
     </div>
 </div>

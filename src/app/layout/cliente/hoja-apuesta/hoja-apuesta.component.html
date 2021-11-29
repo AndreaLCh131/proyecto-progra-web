@@ -1,0 +1,29 @@
+<div class="hoja-apuesta" [formGroup]="hojaApuestaForm">
+    <div class="hoja-apuestas-header">
+        <h4>{{ apuesta.equipos }}</h4>
+        <i class="pi pi-times" (click)="onClickCerrarApuesta(apuesta)"></i>
+    </div>
+    <div class="hoja-apuestas-body">
+        <div class="resultado-partido">
+            Resultado del partido - 90 min: {{ apuesta.partida.resultado }}
+        </div>
+        <div class="col-2 equipo-ganador">
+            {{ apuesta.partida.ganador }}
+        </div>
+        <div class="col-2 factor">
+            {{ apuesta.partida.factor }}
+        </div>
+        <div class="col-2 monto">
+            Monto
+        </div>
+        <div class="col-2 ganacia-posible">
+            Ganancia Posible
+        </div>
+        <div class="col-2 monto-valor">
+            <input type="number" formControlName="valorMonto">
+        </div>
+        <div class="col-2 ganacia-valor">
+            <input type="number" formControlName="valorGanancia">
+        </div>
+    </div>
+</div>

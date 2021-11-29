@@ -1,0 +1,39 @@
+.hoja-apuesta {
+    border: 1px solid black;
+    border-top: unset;
+
+    .hoja-apuestas-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding: 0 0.8em;
+
+        i {
+            cursor: pointer;
+        }
+    }
+
+    .hoja-apuestas-body {
+        padding: 0.8em;
+
+        div {
+            margin-bottom: 0.8em;
+        }
+
+        input{
+            min-width: 9rem;
+            width: 95%;
+        }
+    }
+}
+
+.hoja-apuesta:first-child {
+    border-top: 1px solid black;
+}
+
+
+.col-2 {
+    display: inline-block;
+    width: 50%;
+}

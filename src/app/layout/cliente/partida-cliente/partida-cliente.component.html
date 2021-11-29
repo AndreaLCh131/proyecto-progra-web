@@ -1,55 +1,13 @@
 <div class="partida-wrapper">
     <div class="partida-header">
-        <h6>21:30 Peru-Brasil</h6>
+        <h6>{{ partidaCliente.hora }} {{ partidaCliente.equipos }}</h6>
     </div>
     <div class="partida-body">
-        <div class="partida-resultado">
-            <span class="resultado">Perqwewqeqeqweqweeqwu 1-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Peru 1-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Brasil 3-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Brasil 3-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Peru 1-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Peru 1-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Brasil 3-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Brasil 3-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Peru 1-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Peru 1-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Brasil 3-1</span>
-            <span>123</span>
-        </div>
-        <div class="partida-resultado">
-            <span class="resultado">Brasil 3-1</span>
-            <span>123</span>
-        </div>
+        <ng-container *ngFor="let partida of partidaCliente.partidas">
+            <div class="partida-resultado" (click)="onClickPartida(partida)">
+                <span class="resultado">{{ partida.ganador }} {{ partida.resultado }}</span>
+                <span>{{ partida.factor }}</span>
+            </div>
+        </ng-container>
     </div>
 </div>
